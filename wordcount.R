@@ -3,7 +3,7 @@ library(SparkR)
 
 # Initialize Spark context
 
-lines <- textFile(sc, "/demo/data/shakespeare.txt")
+lines <- textFile(sc, "/demo/data/speeches-test-set.txt")
 
 words <- flatMap(lines,
                  function(line) {
