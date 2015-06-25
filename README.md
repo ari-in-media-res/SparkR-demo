@@ -14,8 +14,10 @@ sparkR-submit is installed with the SparkR package. By default, it can be found 
     export YARN_CONF_DIR=/etc/hadoop/conf
 
 
-//Running on Hortonworks Sandbox, set the following options:
     sparkR-submit --master yarn-client --num-executors 3 --driver-memory 512m --executor-memory 512m --executor-cores 1 
+
+
+
 
 
 
