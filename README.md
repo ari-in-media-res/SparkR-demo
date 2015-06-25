@@ -7,14 +7,15 @@ On YARN, YARN_CONF_DIR must be defined. sparkR-submit supports YARN deploy modes
 sparkR-submit is installed with the SparkR package. By default, it can be found under the default Library ('library' subdirectory of R_HOME)
 
 
-export HADOOP_STREAMING=/usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar
-export HADOOP_CMD=/usr/bin/hadoop
-export SPARK_HOME=/usr/hdp/2.2.4.2-2/spark
-export SPARKR_HOME=/usr/lib64/R/library/SparkR/
-export YARN_CONF_DIR=/etc/hadoop/conf
+    export HADOOP_STREAMING=/usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar
+    export HADOOP_CMD=/usr/bin/hadoop
+    export SPARK_HOME=/usr/hdp/2.2.4.2-2/spark
+    export SPARKR_HOME=/usr/lib64/R/library/SparkR/
+    export YARN_CONF_DIR=/etc/hadoop/conf
+
 
 //Running on Hortonworks Sandbox, set the following options:
-sparkR-submit --master yarn-client --num-executors 3 --driver-memory 512m --executor-memory 512m --executor-cores 1 
+    sparkR-submit --master yarn-client --num-executors 3 --driver-memory 512m --executor-memory 512m --executor-cores 1 
 
 
 
